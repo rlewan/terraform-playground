@@ -2,4 +2,5 @@
 .terraform
 
 credentials/*
+infrastructure.tfplan
 
