@@ -12,6 +12,6 @@ terraform {
   }
 }
 
-module "infrastructur" {
+module "infrastructure" {
   source = "infrastructure"
 }
