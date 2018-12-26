@@ -19,6 +19,8 @@ $ terraform init
 
 This will download vendor-related binaries and sync/set up terraform state.
 
+You'll also need to manually define a storage bucket on your cloud account. This is where Terraform will maintain infrastructure state information. See [`main.tf`](./main.tf) for names that should be used.
+
 ## Usage  
 
 Applying infrastructure changes is broken down into a 2 steps. First, you need to create an execution plan:
