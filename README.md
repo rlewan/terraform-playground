@@ -6,13 +6,17 @@ A simple project to play around with [Terraform](https://terraform.io/) and setu
 
 For Terraform to be able to create and configure stuff under your cloud account, you need to provide access information. Go [here](https://www.terraform.io/docs/providers/google/getting_started.html#adding-credentials) to learn how that can be done.
 
-## Usage
+## Setup
 
 Terraform has to be initialised before you'll be able to do anything else:
 
 ```
 $ terraform init
 ```
+
+This will download vendor-related binaries and sync/set up terraform state.
+
+## Usage  
 
 Applying infrastructure changes is broken down into a 2 steps. First, you need to create an execution plan:
 
@@ -26,4 +30,4 @@ This will print out a breakdown of all changes Terraform will perform in order t
 $ ./apply.sh
 ``` 
 
-This will execute infrastructure changes. If `infrastructure.tfplan` is stale or out of sync with current infrastructure state, Terraform will ask you to generate a new one. The plan file will be cleaned up automatically after a successful apply.
+This will execute infrastructure changes. If `infrastructure.tfplan` is corrupt or out of sync with current infrastructure state, Terraform will ask you to generate a new one. The plan file will be cleaned up automatically after a successful apply.
