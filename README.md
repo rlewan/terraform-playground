@@ -6,6 +6,10 @@ A simple project to play around with [Terraform](https://terraform.io/) and setu
 
 For Terraform to be able to create and configure stuff under your cloud account, you need to provide access information. Go [here](https://www.terraform.io/docs/providers/google/getting_started.html#adding-credentials) to learn how that can be done.
 
+**Note:**
+
+The guide will mention exporting credential file's location under `GOOGLE_CLOUD_KEYFILE_JSON`, but that should actually be `GOOGLE_APPLICATION_CREDENTIALS`.
+
 ## Setup
 
 Terraform has to be initialised before you'll be able to do anything else:

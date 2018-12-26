@@ -1,6 +1,5 @@
 .idea
 .terraform
 
-credentials/*
 infrastructure.tfplan
 
