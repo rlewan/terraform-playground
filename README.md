@@ -11,6 +11,12 @@ The guide will mention exporting credential file's location under `GOOGLE_CLOUD_
 
 ## Setup
 
+### State storage
+
+You'll need to manually create a storage bucket on your cloud account – This is where Terraform will maintain infrastructure state information. See [`main.tf`](./main.tf) for names that should be used.
+
+### Terraform initialisation
+
 Terraform has to be initialised before you'll be able to do anything else:
 
 ```
@@ -18,8 +24,6 @@ $ terraform init
 ```
 
 This will download vendor-related binaries and sync/set up terraform state.
-
-You'll also need to manually define a storage bucket on your cloud account. This is where Terraform will maintain infrastructure state information. See [`main.tf`](./main.tf) for names that should be used.
 
 ## Usage  
 
